@@ -1,7 +1,9 @@
 <template>
-  <Header />
-    <RouterView />
-  <Footer />
+  <div>
+    <Header />
+      <RouterView />
+    <Footer /> 
+  </div>
 </template>
 
 <script lang="ts">
@@ -17,3 +19,7 @@ export default defineComponent({
   },
 });
 </script>
+
+<style>
+@import './assets/main.css';
+</style>
