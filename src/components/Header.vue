@@ -4,9 +4,17 @@
       <img src="/img/logo-petshop-removebg-preview.png" alt="logo petshop">
     </RouterLink>
     <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
+      <ul class="menu">
+        <li>
+          <RouterLink to="/">
+            Home  
+          </RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/about">
+            About  
+          </RouterLink>
+        </li>
         <li>Service</li>
         <li>Gallery</li>
         <li>Contacts</li>
@@ -33,5 +41,13 @@ export default defineComponent({
 
 .header img {
   width: 120px;
+}
+
+.header .menu {
+  display: flex;
+}
+
+.header .menu a {
+  padding: 15px;
 }
 </style>
