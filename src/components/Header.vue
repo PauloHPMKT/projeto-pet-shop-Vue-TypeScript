@@ -1,6 +1,8 @@
 <template>
   <header class="header">
-    <h1>Logo</h1>
+    <RouterLink to="/">
+      <img src="/img/logo-petshop-removebg-preview.png" alt="logo petshop">
+    </RouterLink>
     <nav>
       <ul>
         <li>Home</li>
@@ -27,6 +29,9 @@ export default defineComponent({
   justify-content: space-between;
   align-items: center;
   padding: 10px 150px;
-  background-color: red;
+}
+
+.header img {
+  width: 120px;
 }
 </style>
